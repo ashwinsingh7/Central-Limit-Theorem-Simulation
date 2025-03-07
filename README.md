@@ -1,5 +1,7 @@
 Google Colab notebook can be found here https://colab.research.google.com/drive/1XOSH6bw4V-_wQKb1OBVYH0q5TelcyzsV?usp=sharing 
 
+---
+
 # 📌 Simulation to Test the Central Limit Theorem (CLT)
 
 ## 🔍 Overview
@@ -11,7 +13,7 @@ Additionally, the project investigates:
 - A **random walk problem**, comparing solutions via **CLT vs. simulation**.
 - A discussion on **percentiles vs. confidence intervals** in statistical inference.
 
-
+---
 
 ## 🛠 Methodology
 
@@ -31,14 +33,14 @@ Additionally, the project investigates:
    - Analyze **skewness and kurtosis**.  
    - Plot **histograms** to visually confirm normality and use the **Jarque Bera** hypothesis test to test normality.
 
-
+---
 
 ### **2️⃣ Effect of Sample Size on Normality**
 - Investigates how **changing sample size** affects normality.
 - Multiple simulations are conducted with **varying sample sizes** from a Uniformly distributed population.
 - Helps visualize how CLT holds as **n increases**, reinforcing its practical significance.
 
-
+---
 
 ### **3️⃣ Example Problem - Comparing CLT with a Simulation**
 A **random walk problem** using a **6-sided fair die**:
@@ -59,7 +61,7 @@ A **random walk problem** using a **6-sided fair die**:
 
 📊 **Includes a Random Walk Visualization** to illustrate movement patterns.
 
-
+---
 
 ### **4️⃣ Percentiles vs. Confidence Intervals**
 - Discusses the **differences between percentiles & confidence intervals**.
@@ -67,7 +69,7 @@ A **random walk problem** using a **6-sided fair die**:
 - **Confidence Intervals** estimate **population parameters** from a sample.
 - Clarifies **why confidence intervals are crucial in statistical inference**.
 
-
+---
 
 ## 🎯 Results & Insights
 
@@ -75,5 +77,3 @@ A **random walk problem** using a **6-sided fair die**:
 - **Larger sample sizes** improve normality, showcasing **CLT’s dependence on n**.
 - The **random walk problem** validates **CLT-based probability estimates** using **simulation**.
 - The **percentiles vs. confidence intervals discussion** highlights key differences in **descriptive vs. inferential statistics**.
-
----
