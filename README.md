@@ -2,35 +2,35 @@ Google Colab notebook can be found here https://colab.research.google.com/drive/
 
 ---
 
-# 📌 Simulation to Test the Central Limit Theorem (CLT)
+# Simulation to Test the Central Limit Theorem (CLT)
 
-## 🔍 Overview
+## Overview
 
-This project explores the **Central Limit Theorem (CLT)** using a simulation-based approach. It demonstrates how the distribution of sample means approximates normality, regardless of the population's original distribution. 
+This project explores the **Central Limit Theorem (CLT)** using a simulation-based approach. It demonstrates how the distribution of sample means approximates a Normal distribution, regardless of the population's original distribution. 
 
 Additionally, the project investigates:
 - The **effect of sample size** on normality.
-- A **random walk problem**, comparing solutions via **CLT vs. simulation**.
-- A discussion on **percentiles vs. confidence intervals** in statistical inference.
+- A **random walk problem**, comparing solutions using **CLT vs. simulation**.
+- A discussion on **confidence intervals** in statistical inference.
 
 ---
 
-## 🛠 Methodology
+## Methodology
 
 ### **1️⃣ Testing the Central Limit Theorem (CLT)**
 1. **Generate a Uniform Population**  
    - Create a **uniformly distributed population**.
 2. **Sampling Process**  
-   - Draw **10,000 samples**, each containing **100 observations**.  
+   - Draw **10,000 samples**, each sample containing **100 observations**.  
    - Compute the **sample mean** for each sample.
 3. **Standardization**  
-   - Compute the **mean (m) and standard deviation (s)** of the sample means.  
-   - Standardize using **Z-score transformation**:
+   - Compute the **mean (m) and standard deviation (s)** of the 10,000 sample means.  
+   - Standardise each observation X using:
      ```
      Z = (X - m) / s
      ```
 4. **Normality Verification**  
-   - Analyze **skewness and kurtosis**.  
+   - Analyse **skewness and kurtosis** of the resultant (mean-centred and std dev scaled) set of sample means.  
    - Plot **histograms** to visually confirm normality and use the **Jarque Bera** hypothesis test to test normality.
 
 ---
@@ -38,7 +38,7 @@ Additionally, the project investigates:
 ### **2️⃣ Effect of Sample Size on Normality**
 - Investigates how **changing sample size** affects normality.
 - Multiple simulations are conducted with **varying sample sizes** from a Uniformly distributed population.
-- Helps visualize how CLT holds as **n increases**, reinforcing its practical significance.
+- Helps visualise how CLT holds as **n increases**, reinforcing its practical significance.
 
 ---
 
@@ -53,27 +53,27 @@ A **random walk problem** using a **6-sided fair die**:
 - **Objective:**
   - Determine **the probability of reaching 60+ steps**.
 
-📌 **Two Approaches to Solve the Problem**:
+**Two Approaches to Solve the Problem**:
 1. **Approach 1 - Using Central Limit Theorem**  
    - Applies **CLT-based probability calculations**.
 2. **Approach 2 - Monte Carlo Simulation**  
    - Simulates **thousands of trials** to approximate the probability.
 
-📊 **Includes a Random Walk Visualization** to illustrate movement patterns.
+**Includes a Random Walk Visualisation** to illustrate movement patterns.
 
 ---
 
 ### **4️⃣ Percentiles vs. Confidence Intervals**
 - Discusses the **differences between percentiles & confidence intervals**.
 - **Percentiles** help rank data points in a dataset.
-- **Confidence Intervals** estimate **population parameters** from a sample.
-- Clarifies **why confidence intervals are crucial in statistical inference**.
+- **Confidence Intervals** help provide interval estimates for **population parameters** from a sample.
+- Clarifies **why confidence intervals are crucial in statistical inference** and **how CLT is useful for statitistical inference**.
 
 ---
 
-## 🎯 Results & Insights
+## Results & Insights
 
 - The **sample means distribution** follows a **bell curve**, confirming **CLT**.
 - **Larger sample sizes** improve normality, showcasing **CLT’s dependence on n**.
 - The **random walk problem** validates **CLT-based probability estimates** using **simulation**.
-- The **percentiles vs. confidence intervals discussion** highlights key differences in **descriptive vs. inferential statistics**.
+- The **percentiles vs. confidence intervals discussion** highlights key differences in **descriptive vs. inferential statistics** and the **role of CLT in statistical inference**.
