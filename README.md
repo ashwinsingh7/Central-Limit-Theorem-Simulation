@@ -33,7 +33,7 @@ Additionally, the project investigates:
    - Analyse **skewness and kurtosis** of the resultant (mean-centred and std dev scaled) set of sample means.  
    - Plot **histograms** to visually confirm normality and use the **Jarque Bera** hypothesis test to test normality.
 
-<img width="300" alt="Screenshot 2025-03-23 at 4 07 00 PM" src="https://github.com/user-attachments/assets/37a7d818-2f5e-4bf2-98e8-e799d7917bf9" /> <img width="300" alt="Screenshot 2025-03-23 at 4 07 26 PM" src="https://github.com/user-attachments/assets/8df4c39a-5dff-41ec-aacd-175af6453738" /> <img width="300" alt="Screenshot 2025-03-23 at 4 07 36 PM" src="https://github.com/user-attachments/assets/5ed157bf-f66e-4e69-839b-bf21be7ffc01" />
+<img width="250" alt="Screenshot 2025-03-23 at 4 07 00 PM" src="https://github.com/user-attachments/assets/37a7d818-2f5e-4bf2-98e8-e799d7917bf9" /> <img width="250" alt="Screenshot 2025-03-23 at 4 07 26 PM" src="https://github.com/user-attachments/assets/8df4c39a-5dff-41ec-aacd-175af6453738" /> <img width="250" alt="Screenshot 2025-03-23 at 4 07 36 PM" src="https://github.com/user-attachments/assets/5ed157bf-f66e-4e69-839b-bf21be7ffc01" />
 
 ---
 
