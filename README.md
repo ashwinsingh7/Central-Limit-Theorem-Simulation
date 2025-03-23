@@ -88,5 +88,5 @@ A **random walk problem** using a **6-sided fair die**:
 
 - The **sample means distribution** follows a **bell curve**, confirming **CLT**.
 - **Larger sample sizes** improve normality, showcasing **CLT’s dependence on n**.
-- The **random walk problem** validates **CLT-based probability estimates** using **simulation**.
+- The **random walk problem** validates **CLT-based probability estimates** using a **simulation**.
 - The **percentiles vs. confidence intervals discussion** highlights key differences in **descriptive vs. inferential statistics** and the **role of CLT in statistical inference**.
