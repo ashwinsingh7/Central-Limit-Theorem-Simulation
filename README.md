@@ -9,9 +9,9 @@ Google Colab notebook can be found here https://colab.research.google.com/drive/
 This project explores the **Central Limit Theorem (CLT)** using a simulation-based approach. It demonstrates how the distribution of a large number sample means approximates a Normal distribution, regardless of the population's original distribution. 
 
 Additionally, the project investigates:
-- The **effect of sample size** on normality.
-- A **random walk problem**, comparing solutions using **CLT vs. simulation**.
-- A discussion on **confidence intervals** in statistical inference.
+- The **effect of sample size** on Normality.
+- A **random walk problem**, comparing an analytical solution (using CLT) with a Monte Carlo simulation approach.
+- A discussion on **confidence intervals** in statistical inference - which is more of a note to self.
 
 ---
 
@@ -27,20 +27,20 @@ Additionally, the project investigates:
    - Compute the **mean (m) and standard deviation (s)** of the 10,000 sample means.  
    - Standardise each observation X using:
      ```
-     Z = (X - m) / s
+     Z = (X - m) / s    (where X is a sample mean)
      ```
 4. **Normality Verification**  
    - Analyse **skewness and kurtosis** of the resultant (mean-centred and std dev scaled) set of sample means.  
-   - Plot **histograms** to visually confirm normality and use the **Jarque Bera** hypothesis test to test normality.
+   - Plot **histograms** to visually confirm Normality and use the **Jarque Bera** hypothesis test to test Normality.
 
 <img width="250" alt="Screenshot 2025-03-23 at 4 07 00 PM" src="https://github.com/user-attachments/assets/37a7d818-2f5e-4bf2-98e8-e799d7917bf9" /> <img width="250" alt="Screenshot 2025-03-23 at 4 07 26 PM" src="https://github.com/user-attachments/assets/8df4c39a-5dff-41ec-aacd-175af6453738" /> <img width="250" alt="Screenshot 2025-03-23 at 4 07 36 PM" src="https://github.com/user-attachments/assets/5ed157bf-f66e-4e69-839b-bf21be7ffc01" />
 
 ---
 
 ### **2️⃣ Effect of Sample Size on Normality**
-- Investigates how **changing sample size** affects normality.
+- Investigates how **changing sample size** affects Normality.
 - Multiple simulations are conducted with **varying sample sizes** from a Uniformly distributed population.
-- Helps visualise how CLT holds as **n increases**, reinforcing its practical significance.
+- Helps visualise how CLT holds as **n increases**, reinforcing its practical significance. Also illustrates how quickly the distribution of sample means approaches a Normal distribution.
 
 <img width="450" alt="Screenshot 2025-03-23 at 4 20 19 PM" src="https://github.com/user-attachments/assets/68ba90eb-eae4-4373-8c64-db7b23e554ed" />
 
@@ -63,12 +63,14 @@ A **random walk problem** using a **6-sided fair die**:
   - Determine **the probability of reaching 60+ steps**.
 
 **Two Approaches to Solve the Problem**:
-1. **Approach 1 - Using Central Limit Theorem**  
+1. **Approach 1 - Analytical solution using CLT-based approximations**  
    - Applies **CLT-based probability calculations**.
-2. **Approach 2 - Monte Carlo Simulation**  
+2. **Approach 2 - An empirical approach using Monte Carlo Simulations**  
    - Simulates **thousands of trials** to approximate the probability.
 
-**Includes a Random Walk Visualisation** to illustrate movement patterns.
+It is observed that both approaches give similar answers which are within 0.5% of each other. This aligns with a priori expectations and shows that an analytical solution using the Central Limit Theorem very quickly and easily provides an accurate approximation of a quantity that would otherwise require several simulations to ascertain.
+
+Includes a **Random Walk Visualisation** to illustrate movement patterns.
 
 <img width="350" alt="Screenshot 2025-03-23 at 4 26 12 PM" src="https://github.com/user-attachments/assets/fcb15f83-84c4-4ddc-b749-a8c20e8e6d71" />
 <img width="300" alt="Screenshot 2025-03-23 at 4 26 43 PM" src="https://github.com/user-attachments/assets/748a119e-6df8-487b-b495-448b762de7d8" /> <img width="700" alt="Screenshot 2025-03-23 at 4 27 01 PM" src="https://github.com/user-attachments/assets/fc2fc2e4-393e-4b2b-8abd-4e3f80c70d4d" />
@@ -76,7 +78,7 @@ A **random walk problem** using a **6-sided fair die**:
 
 ---
 
-### **4️⃣ Percentiles vs. Confidence Intervals**
+### **4️⃣ Percentiles vs. Confidence Intervals (Note to Self)**
 - Discusses the **differences between percentiles & confidence intervals**.
 - **Percentiles** help rank data points in a dataset.
 - **Confidence Intervals** help provide interval estimates for **population parameters** from a sample.
@@ -87,6 +89,6 @@ A **random walk problem** using a **6-sided fair die**:
 ## Results & Insights
 
 - The **sample means distribution** follows a **bell curve**, confirming **CLT**.
-- **Larger sample sizes** improve normality, showcasing **CLT’s dependence on n**.
-- The **random walk problem** validates **CLT-based probability estimates** using a **simulation**.
+- **Larger sample sizes** improve Normality, with samples drawn from a continuous Uniform population very rapidly approaching Normality - showcasing **CLT’s relationship with n**.
+- The **random walk problem** validates **CLT-based probability estimates** using a **Monte Carlo simulation**.
 - The **percentiles vs. confidence intervals discussion** highlights key differences in **descriptive vs. inferential statistics** and the **role of CLT in statistical inference**.
